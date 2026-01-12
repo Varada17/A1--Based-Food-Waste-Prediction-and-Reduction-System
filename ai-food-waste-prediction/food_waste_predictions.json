@@ -1,0 +1,1102 @@
+{
+  "historical_data": [
+    {
+      "Date": "2026-01-12 04:33:03.594165",
+      "FoodWaste": 132,
+      "Attendance": 151,
+      "MenuType": "Non-Veg"
+    },
+    {
+      "Date": "2026-01-11 04:33:03.594202",
+      "FoodWaste": 119,
+      "Attendance": 147,
+      "MenuType": "Non-Veg"
+    },
+    {
+      "Date": "2026-01-10 04:33:03.594217",
+      "FoodWaste": 130,
+      "Attendance": 166,
+      "MenuType": "Non-Veg"
+    },
+    {
+      "Date": "2026-01-09 04:33:03.594226",
+      "FoodWaste": 101,
+      "Attendance": 164,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2026-01-08 04:33:03.594236",
+      "FoodWaste": 142,
+      "Attendance": 141,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2026-01-07 04:33:03.594246",
+      "FoodWaste": 142,
+      "Attendance": 150,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2026-01-06 04:33:03.594255",
+      "FoodWaste": 112,
+      "Attendance": 141,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2026-01-05 04:33:03.594274",
+      "FoodWaste": 103,
+      "Attendance": 147,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2026-01-04 04:33:03.594282",
+      "FoodWaste": 124,
+      "Attendance": 172,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2026-01-03 04:33:03.594290",
+      "FoodWaste": 136,
+      "Attendance": 142,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2026-01-02 04:33:03.594297",
+      "FoodWaste": 135,
+      "Attendance": 147,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2026-01-01 04:33:03.594304",
+      "FoodWaste": 108,
+      "Attendance": 179,
+      "MenuType": "Non-Veg"
+    },
+    {
+      "Date": "2025-12-31 04:33:03.594311",
+      "FoodWaste": 124,
+      "Attendance": 154,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2025-12-30 04:33:03.594319",
+      "FoodWaste": 110,
+      "Attendance": 147,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2025-12-29 04:33:03.594326",
+      "FoodWaste": 114,
+      "Attendance": 148,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2025-12-28 04:33:03.594333",
+      "FoodWaste": 139,
+      "Attendance": 164,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2025-12-27 04:33:03.594340",
+      "FoodWaste": 109,
+      "Attendance": 157,
+      "MenuType": "Non-Veg"
+    },
+    {
+      "Date": "2025-12-26 04:33:03.594348",
+      "FoodWaste": 116,
+      "Attendance": 148,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2025-12-25 04:33:03.594355",
+      "FoodWaste": 136,
+      "Attendance": 171,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2025-12-24 04:33:03.594361",
+      "FoodWaste": 108,
+      "Attendance": 162,
+      "MenuType": "Non-Veg"
+    },
+    {
+      "Date": "2025-12-23 04:33:03.594368",
+      "FoodWaste": 120,
+      "Attendance": 159,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2025-12-22 04:33:03.594375",
+      "FoodWaste": 140,
+      "Attendance": 179,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2025-12-21 04:33:03.594382",
+      "FoodWaste": 125,
+      "Attendance": 169,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-12-20 04:33:03.594389",
+      "FoodWaste": 110,
+      "Attendance": 152,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-12-19 04:33:03.594396",
+      "FoodWaste": 108,
+      "Attendance": 164,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-12-18 04:33:03.594403",
+      "FoodWaste": 100,
+      "Attendance": 141,
+      "MenuType": "Non-Veg"
+    },
+    {
+      "Date": "2025-12-17 04:33:03.594410",
+      "FoodWaste": 119,
+      "Attendance": 175,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-12-16 04:33:03.594417",
+      "FoodWaste": 123,
+      "Attendance": 172,
+      "MenuType": "Non-Veg"
+    },
+    {
+      "Date": "2025-12-15 04:33:03.594424",
+      "FoodWaste": 116,
+      "Attendance": 144,
+      "MenuType": "Non-Veg"
+    },
+    {
+      "Date": "2025-12-14 04:33:03.594431",
+      "FoodWaste": 102,
+      "Attendance": 161,
+      "MenuType": "Veg"
+    }
+  ],
+  "predictions": [
+    {
+      "timestamp": "2026-01-12T04:33:29.544188",
+      "date_range": "2026-01-11 to 2026-01-12T04:33:03.608637",
+      "attendance": 50.0,
+      "predicted_waste": 106.68,
+      "carbon_emission": 197.35,
+      "mae": 6.7
+    },
+    {
+      "timestamp": "2026-01-12T04:33:33.430124",
+      "date_range": "2026-01-11 to 2026-01-12T04:33:03.608637",
+      "attendance": 50.0,
+      "predicted_waste": 106.68,
+      "carbon_emission": 197.35,
+      "mae": 6.7
+    },
+    {
+      "timestamp": "2026-01-12T04:34:28.329744",
+      "date_range": "2026-01-10 to 2026-01-12T04:33:03.608637",
+      "attendance": 98.0,
+      "predicted_waste": 107.95,
+      "carbon_emission": 199.71,
+      "mae": 10.15
+    },
+    {
+      "timestamp": "2026-01-12T04:34:29.868930",
+      "date_range": "2026-01-10 to 2026-01-12T04:33:03.608637",
+      "attendance": 98.0,
+      "predicted_waste": 107.95,
+      "carbon_emission": 199.71,
+      "mae": 10.15
+    },
+    {
+      "timestamp": "2026-01-12T04:35:05.192819",
+      "date_range": "2026-01-07 to 2026-01-09",
+      "attendance": 100.0,
+      "predicted_waste": 120.7,
+      "carbon_emission": 223.3,
+      "mae": 14.2
+    },
+    {
+      "timestamp": "2026-01-12T05:47:16.912843",
+      "date_range": "2025-12-13T05:47:04.007325 to 2026-01-12T05:47:04.007343",
+      "attendance": 58.0,
+      "predicted_waste": 102.08,
+      "carbon_emission": 188.86,
+      "mae": 13.45
+    },
+    {
+      "timestamp": "2026-01-12T06:17:06.976511",
+      "date_range": "2025-12-13T06:16:41.194131 to 2026-01-12T06:16:41.194141",
+      "attendance": 85.0,
+      "predicted_waste": 102.08,
+      "carbon_emission": 188.86,
+      "mae": 13.45
+    },
+    {
+      "timestamp": "2026-01-12T06:20:44.187430",
+      "date_range": "2025-12-13T06:20:34.912368 to 2026-01-12T06:20:34.912384",
+      "attendance": 85.0,
+      "predicted_waste": 102.08,
+      "carbon_emission": 188.86,
+      "mae": 13.45
+    },
+    {
+      "timestamp": "2026-01-12T06:20:48.803885",
+      "date_range": "2025-12-13T06:20:34.912368 to 2026-01-12T06:20:34.912384",
+      "attendance": 85.0,
+      "predicted_waste": 102.08,
+      "carbon_emission": 188.86,
+      "mae": 13.45
+    },
+    {
+      "timestamp": "2026-01-12T06:21:25.017505",
+      "date_range": "2025-12-13T06:21:19.107132 to 2026-01-12T06:21:19.107201",
+      "attendance": 85.0,
+      "predicted_waste": 102.08,
+      "carbon_emission": 188.86,
+      "mae": 13.45
+    },
+    {
+      "timestamp": "2026-01-12T06:23:01.430329",
+      "date_range": "2025-12-13T06:21:58.798861 to 2026-01-12T06:21:58.798871",
+      "attendance": 50.0,
+      "predicted_waste": 102.08,
+      "carbon_emission": 188.86,
+      "mae": 13.45
+    },
+    {
+      "timestamp": "2026-01-12T06:23:04.508856",
+      "date_range": "2025-12-13T06:21:58.798861 to 2026-01-12T06:21:58.798871",
+      "attendance": 50.0,
+      "predicted_waste": 102.08,
+      "carbon_emission": 188.86,
+      "mae": 13.45
+    },
+    {
+      "timestamp": "2026-01-12T06:23:48.297533",
+      "date_range": "2025-12-13T06:23:43.372236 to 2026-01-12T06:23:43.372246",
+      "attendance": 85.0,
+      "predicted_waste": 102.08,
+      "carbon_emission": 188.86,
+      "mae": 13.45
+    },
+    {
+      "timestamp": "2026-01-12T19:03:33.958613",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T19:05:57.064239",
+      "attendance": 169.0,
+      "menu_type": "Veg",
+      "predicted_waste": 128.3320319432121,
+      "carbon_emission": 237.41425909494237
+    },
+    {
+      "timestamp": "2026-01-12T19:11:42.574838",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T19:11:44.551787",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T19:11:54.891630",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T19:24:36.127860",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T19:24:38.184009",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T19:24:39.114279",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T19:32:48.442596",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T19:42:20.769265",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T19:45:06.978552",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T19:45:15.905664",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T19:48:47.633455",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T19:51:22.468105",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T19:58:49.621139",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T20:00:49.598831",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T20:02:00.355545",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T20:02:34.658766",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T20:02:45.593580",
+      "attendance": 96.0,
+      "menu_type": "Veg",
+      "predicted_waste": 72.89866903283053,
+      "carbon_emission": 134.8625377107365
+    },
+    {
+      "timestamp": "2026-01-12T20:05:33.639177",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T20:19:18.561640",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T20:19:21.987972",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T20:19:25.537341",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T20:19:46.991023",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T20:23:24.683758",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T20:23:26.539035",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T20:23:32.341918",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T20:23:40.666515",
+      "attendance": 95.0,
+      "menu_type": "Veg",
+      "predicted_waste": 72.13930789707187,
+      "carbon_emission": 133.45771960958297
+    },
+    {
+      "timestamp": "2026-01-12T20:24:15.308120",
+      "attendance": 85.0,
+      "menu_type": "Veg",
+      "predicted_waste": 64.54569653948536,
+      "carbon_emission": 119.40953859804793
+    },
+    {
+      "timestamp": "2026-01-12T20:26:49.760798",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T20:27:01.025620",
+      "attendance": 259.0,
+      "menu_type": "Veg",
+      "predicted_waste": 196.6745341614907,
+      "carbon_emission": 363.8478881987578
+    },
+    {
+      "timestamp": "2026-01-12T20:28:11.040676",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T20:28:40.257445",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T20:28:50.910028",
+      "attendance": 85.0,
+      "menu_type": "Veg",
+      "predicted_waste": 64.54569653948536,
+      "carbon_emission": 119.40953859804793
+    },
+    {
+      "timestamp": "2026-01-12T20:28:58.884454",
+      "attendance": 85.0,
+      "menu_type": "Veg",
+      "predicted_waste": 64.54569653948536,
+      "carbon_emission": 119.40953859804793
+    },
+    {
+      "timestamp": "2026-01-12T20:28:59.170341",
+      "attendance": 85.0,
+      "menu_type": "Veg",
+      "predicted_waste": 64.54569653948536,
+      "carbon_emission": 119.40953859804793
+    },
+    {
+      "timestamp": "2026-01-12T20:29:03.962347",
+      "attendance": 99.0,
+      "menu_type": "Veg",
+      "predicted_waste": 75.1767524401065,
+      "carbon_emission": 139.07699201419703
+    },
+    {
+      "timestamp": "2026-01-12T20:34:33.470225",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T20:34:44.019444",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T20:36:04.778083",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T20:36:13.103165",
+      "attendance": 100.0,
+      "menu_type": "Veg",
+      "predicted_waste": 75.93611357586514,
+      "carbon_emission": 140.4818101153505
+    },
+    {
+      "timestamp": "2026-01-12T20:36:21.475795",
+      "attendance": 95.0,
+      "menu_type": "Veg",
+      "predicted_waste": 72.13930789707187,
+      "carbon_emission": 133.45771960958297
+    },
+    {
+      "timestamp": "2026-01-12T20:36:23.674972",
+      "attendance": 95.0,
+      "menu_type": "Veg",
+      "predicted_waste": 72.13930789707187,
+      "carbon_emission": 133.45771960958297
+    },
+    {
+      "timestamp": "2026-01-12T20:36:24.610694",
+      "attendance": 95.0,
+      "menu_type": "Veg",
+      "predicted_waste": 72.13930789707187,
+      "carbon_emission": 133.45771960958297
+    },
+    {
+      "timestamp": "2026-01-12T20:36:30.494970",
+      "attendance": 99.0,
+      "menu_type": "Veg",
+      "predicted_waste": 75.1767524401065,
+      "carbon_emission": 139.07699201419703
+    },
+    {
+      "timestamp": "2026-01-12T20:37:05.180941",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T20:37:07.478995",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T20:45:57.201242",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T21:26:18.598396",
+      "attendance": 95.0,
+      "menu_type": "Veg",
+      "predicted_waste": 72.13930789707187,
+      "carbon_emission": 133.45771960958297
+    },
+    {
+      "timestamp": "2026-01-12T21:27:35.046750",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T21:27:59.176298",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T21:28:29.149104",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T21:30:56.303559",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T21:36:29.550524",
+      "attendance": 456.0,
+      "menu_type": "Veg",
+      "predicted_waste": 300.0,
+      "carbon_emission": 555.0
+    },
+    {
+      "timestamp": "2026-01-12T21:37:18.442797",
+      "attendance": 156.0,
+      "menu_type": "Veg",
+      "predicted_waste": 118.46033717834962,
+      "carbon_emission": 219.15162377994682
+    },
+    {
+      "timestamp": "2026-01-12T21:37:53.794910",
+      "attendance": 256.0,
+      "menu_type": "Veg",
+      "predicted_waste": 194.39645075421473,
+      "carbon_emission": 359.6334338952973
+    },
+    {
+      "timestamp": "2026-01-12T21:42:55.816124",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T21:43:16.802801",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T21:43:33.937374",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T21:44:12.398387",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T21:44:28.976988",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T21:45:17.879184",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T21:54:53.822632",
+      "attendance": 55.0,
+      "menu_type": "Veg",
+      "predicted_waste": 50.0,
+      "carbon_emission": 92.5
+    },
+    {
+      "timestamp": "2026-01-12T21:54:55.300042",
+      "attendance": 55.0,
+      "menu_type": "Veg",
+      "predicted_waste": 50.0,
+      "carbon_emission": 92.5
+    },
+    {
+      "timestamp": "2026-01-12T21:54:56.821062",
+      "attendance": 55.0,
+      "menu_type": "Veg",
+      "predicted_waste": 50.0,
+      "carbon_emission": 92.5
+    },
+    {
+      "timestamp": "2026-01-12T21:54:56.976651",
+      "attendance": 55.0,
+      "menu_type": "Veg",
+      "predicted_waste": 50.0,
+      "carbon_emission": 92.5
+    },
+    {
+      "timestamp": "2026-01-12T21:54:57.075382",
+      "attendance": 55.0,
+      "menu_type": "Veg",
+      "predicted_waste": 50.0,
+      "carbon_emission": 92.5
+    },
+    {
+      "timestamp": "2026-01-12T21:55:10.559515",
+      "attendance": 55.0,
+      "menu_type": "Veg",
+      "predicted_waste": 50.0,
+      "carbon_emission": 92.5
+    },
+    {
+      "timestamp": "2026-01-12T21:55:14.926199",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T21:55:18.310206",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T21:55:19.274791",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T21:55:34.516968",
+      "attendance": 266.0,
+      "menu_type": "Veg",
+      "predicted_waste": 201.99006211180125,
+      "carbon_emission": 373.68161490683235
+    },
+    {
+      "timestamp": "2026-01-12T21:55:36.307133",
+      "attendance": 266.0,
+      "menu_type": "Veg",
+      "predicted_waste": 201.99006211180125,
+      "carbon_emission": 373.68161490683235
+    },
+    {
+      "timestamp": "2026-01-12T21:55:56.982991",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T21:57:38.844580",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T21:58:27.368179",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T21:58:32.331337",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T21:58:50.160318",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T21:58:56.839583",
+      "attendance": 95.0,
+      "menu_type": "Veg",
+      "predicted_waste": 72.13930789707187,
+      "carbon_emission": 133.45771960958297
+    },
+    {
+      "timestamp": "2026-01-12T21:59:07.054419",
+      "attendance": 96.0,
+      "menu_type": "Veg",
+      "predicted_waste": 72.89866903283053,
+      "carbon_emission": 134.8625377107365
+    },
+    {
+      "timestamp": "2026-01-12T21:59:25.958264",
+      "attendance": 454.0,
+      "menu_type": "Veg",
+      "predicted_waste": 300.0,
+      "carbon_emission": 555.0
+    },
+    {
+      "timestamp": "2026-01-12T21:59:39.196097",
+      "attendance": 65.0,
+      "menu_type": "Veg",
+      "predicted_waste": 50.0,
+      "carbon_emission": 92.5
+    },
+    {
+      "timestamp": "2026-01-12T22:07:20.831354",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T22:23:19.411564",
+      "attendance": 256.0,
+      "menu_type": "Veg",
+      "predicted_waste": 194.39645075421473,
+      "carbon_emission": 359.6334338952973
+    },
+    {
+      "timestamp": "2026-01-12T22:23:45.118539",
+      "attendance": 147.0,
+      "menu_type": "Veg",
+      "predicted_waste": 111.62608695652173,
+      "carbon_emission": 206.50826086956522
+    },
+    {
+      "timestamp": "2026-01-12T22:23:45.826052",
+      "attendance": 147.0,
+      "menu_type": "Veg",
+      "predicted_waste": 111.62608695652173,
+      "carbon_emission": 206.50826086956522
+    },
+    {
+      "timestamp": "2026-01-12T22:29:39.343792",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T22:29:40.839972",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T22:29:42.451111",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T22:31:03.249739",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T22:31:05.334715",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T22:41:57.884191",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 224.77089618456077
+    },
+    {
+      "timestamp": "2026-01-12T22:57:16.741040",
+      "attendance": 160.0,
+      "menu_type": "Non-Veg",
+      "predicted_waste": 110.452528837622,
+      "carbon_emission": 276.131322094055
+    },
+    {
+      "timestamp": "2026-01-12T22:57:25.524651",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 145.0
+    },
+    {
+      "timestamp": "2026-01-12T23:05:16.635885",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 145.0
+    },
+    {
+      "timestamp": "2026-01-12T23:05:34.212929",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 145.0
+    },
+    {
+      "timestamp": "2026-01-12T23:05:35.868683",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 145.0
+    },
+    {
+      "timestamp": "2026-01-12T23:05:38.862447",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 145.0
+    },
+    {
+      "timestamp": "2026-01-12T23:05:39.922961",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 145.0
+    },
+    {
+      "timestamp": "2026-01-12T23:05:54.521862",
+      "attendance": 455.0,
+      "menu_type": "Non-Veg",
+      "predicted_waste": 300.0,
+      "carbon_emission": 750.0
+    },
+    {
+      "timestamp": "2026-01-12T23:34:38.527706",
+      "attendance": 160.0,
+      "menu_type": "Non-Veg",
+      "predicted_waste": 110.452528837622,
+      "carbon_emission": 276.131322094055
+    },
+    {
+      "timestamp": "2026-01-12T23:39:32.450125",
+      "attendance": 300.0,
+      "menu_type": "Veg",
+      "predicted_waste": 227.8083407275954,
+      "carbon_emission": 145.0
+    },
+    {
+      "timestamp": "2026-01-12T23:39:36.267549",
+      "attendance": 300.0,
+      "menu_type": "Non-Veg",
+      "predicted_waste": 207.09849157054126,
+      "carbon_emission": 517.7462289263532
+    },
+    {
+      "timestamp": "2026-01-12T23:39:42.096544",
+      "attendance": 300.0,
+      "menu_type": "Special",
+      "predicted_waste": 269.22803904170365,
+      "carbon_emission": 673.0700976042591
+    },
+    {
+      "timestamp": "2026-01-12T23:47:23.744425",
+      "attendance": 56.0,
+      "menu_type": "Special",
+      "predicted_waste": 50.255900621118016,
+      "carbon_emission": 155.0
+    },
+    {
+      "timestamp": "2026-01-12T23:48:08.627874",
+      "attendance": 56.0,
+      "menu_type": "Veg",
+      "predicted_waste": 50.0,
+      "carbon_emission": 60.0
+    },
+    {
+      "timestamp": "2026-01-12T23:48:12.912588",
+      "attendance": 56.0,
+      "menu_type": "Veg",
+      "predicted_waste": 50.0,
+      "carbon_emission": 60.0
+    },
+    {
+      "timestamp": "2026-01-12T23:48:43.562966",
+      "attendance": 75.0,
+      "menu_type": "Veg",
+      "predicted_waste": 56.95208518189885,
+      "carbon_emission": 68.34250221827863
+    },
+    {
+      "timestamp": "2026-01-12T23:49:42.484712",
+      "attendance": 75.0,
+      "menu_type": "Veg",
+      "predicted_waste": 56.95208518189885,
+      "carbon_emission": 68.34250221827863
+    },
+    {
+      "timestamp": "2026-01-12T23:55:05.048444",
+      "attendance": 160.0,
+      "menu_type": "Non-Veg",
+      "predicted_waste": 110.452528837622,
+      "carbon_emission": 276.131322094055
+    },
+    {
+      "timestamp": "2026-01-12T23:55:47.219528",
+      "attendance": 160.0,
+      "menu_type": "Special",
+      "predicted_waste": 143.5882874889086,
+      "carbon_emission": 358.9707187222715
+    },
+    {
+      "timestamp": "2026-01-12T23:56:29.927040",
+      "attendance": 160.0,
+      "menu_type": "Non-Veg",
+      "predicted_waste": 110.452528837622,
+      "carbon_emission": 276.131322094055
+    },
+    {
+      "timestamp": "2026-01-13T00:08:18.245218",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 145.0
+    },
+    {
+      "timestamp": "2026-01-13T00:10:46.808856",
+      "attendance": 160.0,
+      "menu_type": "Veg",
+      "predicted_waste": 121.4977817213842,
+      "carbon_emission": 145.0
+    },
+    {
+      "timestamp": "2026-01-13T00:10:59.603292",
+      "attendance": 125.0,
+      "menu_type": "Non-Veg",
+      "predicted_waste": 86.2910381543922,
+      "carbon_emission": 215.7275953859805
+    },
+    {
+      "timestamp": "2026-01-13T00:14:25.749439",
+      "attendance": 100.0,
+      "menu_type": "Veg",
+      "predicted_waste": 75.93611357586514,
+      "carbon_emission": 91.12333629103816
+    }
+  ]
+}
