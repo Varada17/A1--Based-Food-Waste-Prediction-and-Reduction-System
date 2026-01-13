@@ -1,0 +1,546 @@
+{
+  "historical_data": [
+    {
+      "Date": "2025-06-01T00:00:00",
+      "FoodWaste": 107.45071229516849,
+      "Attendance": 149,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2025-06-02T00:00:00",
+      "FoodWaste": 98.92585030753483,
+      "Attendance": 181,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-06-03T00:00:00",
+      "FoodWaste": 111.71384691921217,
+      "Attendance": 194,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-06-04T00:00:00",
+      "FoodWaste": 125.84045034552523,
+      "Attendance": 211,
+      "MenuType": "Non-Veg"
+    },
+    {
+      "Date": "2025-06-05T00:00:00",
+      "FoodWaste": 100.47585805781938,
+      "Attendance": 208,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2025-06-06T00:00:00",
+      "FoodWaste": 101.46482962656475,
+      "Attendance": 181,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2025-06-07T00:00:00",
+      "FoodWaste": 129.64827215646272,
+      "Attendance": 216,
+      "MenuType": "Non-Veg"
+    },
+    {
+      "Date": "2025-06-08T00:00:00",
+      "FoodWaste": 118.4481751063226,
+      "Attendance": 120,
+      "MenuType": "Non-Veg"
+    },
+    {
+      "Date": "2025-06-09T00:00:00",
+      "FoodWaste": 100.86340594528177,
+      "Attendance": 146,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2025-06-10T00:00:00",
+      "FoodWaste": 117.00400685362966,
+      "Attendance": 181,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2025-06-11T00:00:00",
+      "FoodWaste": 102.86457551169762,
+      "Attendance": 196,
+      "MenuType": "Non-Veg"
+    },
+    {
+      "Date": "2025-06-12T00:00:00",
+      "FoodWaste": 103.76922382430466,
+      "Attendance": 122,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-06-13T00:00:00",
+      "FoodWaste": 115.31198434275002,
+      "Attendance": 189,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-06-14T00:00:00",
+      "FoodWaste": 83.89774733124722,
+      "Attendance": 191,
+      "MenuType": "Non-Veg"
+    },
+    {
+      "Date": "2025-06-15T00:00:00",
+      "FoodWaste": 87.6235889289845,
+      "Attendance": 146,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-06-16T00:00:00",
+      "FoodWaste": 105.94845321951149,
+      "Attendance": 128,
+      "MenuType": "Non-Veg"
+    },
+    {
+      "Date": "2025-06-17T00:00:00",
+      "FoodWaste": 100.05972972292268,
+      "Attendance": 181,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-06-18T00:00:00",
+      "FoodWaste": 120.81839157074795,
+      "Attendance": 156,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-06-19T00:00:00",
+      "FoodWaste": 103.3189130690329,
+      "Attendance": 216,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2025-06-20T00:00:00",
+      "FoodWaste": 96.57049162873321,
+      "Attendance": 170,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2025-06-21T00:00:00",
+      "FoodWaste": 140.53582562591544,
+      "Attendance": 163,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-06-22T00:00:00",
+      "FoodWaste": 115.9398861098327,
+      "Attendance": 143,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-06-23T00:00:00",
+      "FoodWaste": 121.09341827783285,
+      "Attendance": 198,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2025-06-24T00:00:00",
+      "FoodWaste": 99.44092740917176,
+      "Attendance": 178,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2025-06-25T00:00:00",
+      "FoodWaste": 113.35494185910794,
+      "Attendance": 151,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2025-06-26T00:00:00",
+      "FoodWaste": 123.8691444415291,
+      "Attendance": 215,
+      "MenuType": "Non-Veg"
+    },
+    {
+      "Date": "2025-06-27T00:00:00",
+      "FoodWaste": 105.60035452608065,
+      "Attendance": 207,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-06-28T00:00:00",
+      "FoodWaste": 129.13527756400958,
+      "Attendance": 171,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2025-06-29T00:00:00",
+      "FoodWaste": 115.09866756205025,
+      "Attendance": 181,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-06-30T00:00:00",
+      "FoodWaste": 120.31449782399844,
+      "Attendance": 177,
+      "MenuType": "Non-Veg"
+    },
+    {
+      "Date": "2025-07-01T00:00:00",
+      "FoodWaste": 116.21853036079594,
+      "Attendance": 171,
+      "MenuType": "Non-Veg"
+    },
+    {
+      "Date": "2025-07-02T00:00:00",
+      "FoodWaste": 153.55448134941983,
+      "Attendance": 131,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2025-07-03T00:00:00",
+      "FoodWaste": 126.06539822323175,
+      "Attendance": 158,
+      "MenuType": "Non-Veg"
+    },
+    {
+      "Date": "2025-07-04T00:00:00",
+      "FoodWaste": 110.87055686750456,
+      "Attendance": 121,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-07-05T00:00:00",
+      "FoodWaste": 139.51305452946926,
+      "Attendance": 122,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2025-07-06T00:00:00",
+      "FoodWaste": 109.27069462804732,
+      "Attendance": 175,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-07-07T00:00:00",
+      "FoodWaste": 131.0941265040881,
+      "Attendance": 200,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-07-08T00:00:00",
+      "FoodWaste": 98.91287882924937,
+      "Attendance": 178,
+      "MenuType": "Non-Veg"
+    },
+    {
+      "Date": "2025-07-09T00:00:00",
+      "FoodWaste": 108.70044771831004,
+      "Attendance": 121,
+      "MenuType": "Non-Veg"
+    },
+    {
+      "Date": "2025-07-10T00:00:00",
+      "FoodWaste": 131.85966410055264,
+      "Attendance": 121,
+      "MenuType": "Non-Veg"
+    },
+    {
+      "Date": "2025-07-11T00:00:00",
+      "FoodWaste": 140.23513574083054,
+      "Attendance": 211,
+      "MenuType": "Non-Veg"
+    },
+    {
+      "Date": "2025-07-12T00:00:00",
+      "FoodWaste": 131.94765780678435,
+      "Attendance": 173,
+      "MenuType": "Non-Veg"
+    },
+    {
+      "Date": "2025-07-13T00:00:00",
+      "FoodWaste": 127.82876766383019,
+      "Attendance": 206,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2025-07-14T00:00:00",
+      "FoodWaste": 125.20044949359942,
+      "Attendance": 215,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-07-15T00:00:00",
+      "FoodWaste": 107.65967226254028,
+      "Attendance": 216,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-07-16T00:00:00",
+      "FoodWaste": 119.12718647220099,
+      "Attendance": 120,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-07-17T00:00:00",
+      "FoodWaste": 123.06936875948217,
+      "Attendance": 138,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-07-18T00:00:00",
+      "FoodWaste": 145.85657758225568,
+      "Attendance": 121,
+      "MenuType": "Non-Veg"
+    },
+    {
+      "Date": "2025-07-19T00:00:00",
+      "FoodWaste": 135.14148243477206,
+      "Attendance": 172,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-07-20T00:00:00",
+      "FoodWaste": 103.49575362796546,
+      "Attendance": 163,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2025-07-21T00:00:00",
+      "FoodWaste": 134.7234982734749,
+      "Attendance": 209,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2025-07-22T00:00:00",
+      "FoodWaste": 123.9737101073293,
+      "Attendance": 151,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-07-23T00:00:00",
+      "FoodWaste": 119.45076745690456,
+      "Attendance": 189,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-07-24T00:00:00",
+      "FoodWaste": 138.60150399047504,
+      "Attendance": 151,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2025-07-25T00:00:00",
+      "FoodWaste": 144.68042176378512,
+      "Attendance": 187,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2025-07-26T00:00:00",
+      "FoodWaste": 142.94124139946797,
+      "Attendance": 174,
+      "MenuType": "Non-Veg"
+    },
+    {
+      "Date": "2025-07-27T00:00:00",
+      "FoodWaste": 116.10819927619141,
+      "Attendance": 194,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2025-07-28T00:00:00",
+      "FoodWaste": 123.75081699285421,
+      "Attendance": 175,
+      "MenuType": "Non-Veg"
+    },
+    {
+      "Date": "2025-07-29T00:00:00",
+      "FoodWaste": 133.0189541920822,
+      "Attendance": 136,
+      "MenuType": "Non-Veg"
+    },
+    {
+      "Date": "2025-07-30T00:00:00",
+      "FoodWaste": 142.31301593427628,
+      "Attendance": 157,
+      "MenuType": "Non-Veg"
+    },
+    {
+      "Date": "2025-07-31T00:00:00",
+      "FoodWaste": 120.0913092370911,
+      "Attendance": 143,
+      "MenuType": "Non-Veg"
+    },
+    {
+      "Date": "2025-08-01T00:00:00",
+      "FoodWaste": 124.06281482428484,
+      "Attendance": 188,
+      "MenuType": "Non-Veg"
+    },
+    {
+      "Date": "2025-08-02T00:00:00",
+      "FoodWaste": 109.79162351843644,
+      "Attendance": 217,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-08-03T00:00:00",
+      "FoodWaste": 107.95318163825615,
+      "Attendance": 189,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2025-08-04T00:00:00",
+      "FoodWaste": 137.56503022489133,
+      "Attendance": 205,
+      "MenuType": "Non-Veg"
+    },
+    {
+      "Date": "2025-08-05T00:00:00",
+      "FoodWaste": 145.17341099234116,
+      "Attendance": 130,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2025-08-06T00:00:00",
+      "FoodWaste": 123.1747402908827,
+      "Attendance": 135,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2025-08-07T00:00:00",
+      "FoodWaste": 138.70601974891648,
+      "Attendance": 216,
+      "MenuType": "Non-Veg"
+    },
+    {
+      "Date": "2025-08-08T00:00:00",
+      "FoodWaste": 128.44942211523616,
+      "Attendance": 192,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-08-09T00:00:00",
+      "FoodWaste": 112.69436004622474,
+      "Attendance": 178,
+      "MenuType": "Non-Veg"
+    },
+    {
+      "Date": "2025-08-10T00:00:00",
+      "FoodWaste": 127.11351053477594,
+      "Attendance": 189,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-08-11T00:00:00",
+      "FoodWaste": 144.0604444049267,
+      "Attendance": 199,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2025-08-12T00:00:00",
+      "FoodWaste": 119.72650482988526,
+      "Attendance": 212,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-08-13T00:00:00",
+      "FoodWaste": 142.98503640767598,
+      "Attendance": 122,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-08-14T00:00:00",
+      "FoodWaste": 79.4490094134315,
+      "Attendance": 139,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-08-15T00:00:00",
+      "FoodWaste": 130.28270188874706,
+      "Attendance": 178,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2025-08-16T00:00:00",
+      "FoodWaste": 118.44890147062999,
+      "Attendance": 155,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2025-08-17T00:00:00",
+      "FoodWaste": 111.82807008270487,
+      "Attendance": 138,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-08-18T00:00:00",
+      "FoodWaste": 116.84145280267646,
+      "Attendance": 209,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-08-19T00:00:00",
+      "FoodWaste": 84.78618646251556,
+      "Attendance": 186,
+      "MenuType": "Non-Veg"
+    },
+    {
+      "Date": "2025-08-20T00:00:00",
+      "FoodWaste": 110.42310048151168,
+      "Attendance": 138,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-08-21T00:00:00",
+      "FoodWaste": 118.17808497969108,
+      "Attendance": 139,
+      "MenuType": "Non-Veg"
+    },
+    {
+      "Date": "2025-08-22T00:00:00",
+      "FoodWaste": 134.07878000909523,
+      "Attendance": 215,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-08-23T00:00:00",
+      "FoodWaste": 103.21205647641779,
+      "Attendance": 190,
+      "MenuType": "Non-Veg"
+    },
+    {
+      "Date": "2025-08-24T00:00:00",
+      "FoodWaste": 97.92224046127934,
+      "Attendance": 171,
+      "MenuType": "Special"
+    },
+    {
+      "Date": "2025-08-25T00:00:00",
+      "FoodWaste": 101.57565836726764,
+      "Attendance": 152,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-08-26T00:00:00",
+      "FoodWaste": 121.8753028903996,
+      "Attendance": 159,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-08-27T00:00:00",
+      "FoodWaste": 112.10874652131474,
+      "Attendance": 158,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-08-28T00:00:00",
+      "FoodWaste": 98.25631133222092,
+      "Attendance": 201,
+      "MenuType": "Veg"
+    },
+    {
+      "Date": "2025-08-29T00:00:00",
+      "FoodWaste": 112.92006913097322,
+      "Attendance": 120,
+      "MenuType": "Non-Veg"
+    }
+  ],
+  "predictions": [],
+  "model_trained": false
+}

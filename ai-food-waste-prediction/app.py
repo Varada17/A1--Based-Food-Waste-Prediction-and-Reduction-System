@@ -11,12 +11,19 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error
 import warnings
 warnings.filterwarnings('ignore')
 
+# Import ML models
+from ml_models import FoodWastePredictor
+
 # Disable TensorFlow noise
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 
 # NETWORK SERVER READY
 app = dash.Dash(__name__)
 STORAGE_FILE = 'food_waste_predictions.json'
+
+# Initialize ML predictor
+ml_predictor = FoodWastePredictor()
+ml_predictor.load_models()  # Try to load existing models
 
 def load_stored_data():
     """1. SYNTHETIC HISTORICAL DATA (PER SPECS)"""
@@ -141,7 +148,7 @@ app.layout = html.Div([
         
         # RIGHT: CONTROLS + PREDICTION
         html.Div([
-            html.Div('🎯 RULE-BASED FORECASTING', style={
+            html.Div('🎯 ML-POWERED FOOD WASTE PREDICTION', style={
                 'background': 'linear-gradient(135deg, #28a745, #20c997)', 'color': 'white', 
                 'padding': '20px', 'borderRadius': '15px', 'margin': '-25px -25px 20px -25px'}),
             
@@ -155,6 +162,15 @@ app.layout = html.Div([
             html.Div([html.Span('🍽️ Menu Type: ', style={'fontWeight': 'bold'}),
                      html.Div(id='menu-buttons')], style={'margin': '20px 0'}),
             
+            html.Button('🤖 TRAIN ML MODELS', id='train-btn', n_clicks=0,
+                       style={'width': '100%', 'background': 'linear-gradient(45deg, #9C27B0, #E91E63)', 
+                             'color': 'white', 'border': 'none', 'padding': '15px', 'fontSize': '18px', 
+                             'fontWeight': 'bold', 'borderRadius': '15px', 'cursor': 'pointer',
+                             'boxShadow': '0 8px 25px rgba(156,39,176,0.4)', 'transition': 'all 0.3s',
+                             'marginBottom': '15px'}),
+            
+            html.Div(id='training-status', style={'marginBottom': '15px'}),
+            
             html.Button('🚀 PREDICT & SAVE', id='predict-btn', n_clicks=0,disabled=True,
                        style={'width': '100%', 'background': 'linear-gradient(45deg, #1f77b4, #4B8BBE)', 
                              'color': 'white', 'border': 'none', 'padding': '20px', 'fontSize': '22px', 
@@ -166,7 +182,8 @@ app.layout = html.Div([
             dcc.Graph(id='carbon-chart'),
             
             dcc.Store(id='data-storage', data=json.dumps(data_store)),
-            dcc.Store(id='selected-menu-type', data='Veg')
+            dcc.Store(id='selected-menu-type', data='Veg'),
+            dcc.Store(id='ml-models-trained', data=ml_predictor.is_trained)
         ], style={'width': '48%', 'background': 'white', 'padding': '25px', 'borderRadius': '20px'})
     ])
 ], style={'maxWidth': '1600px', 'margin': '0 auto'})
@@ -211,22 +228,88 @@ def update_menu_buttons(_):
     ], style={'display': 'flex', 'gap': '10px'})
 
 @callback(
+    Output('training-status', 'children'),
+    Input('train-btn', 'n_clicks'),
+    State('data-storage', 'data')
+)
+def train_ml_models(n_clicks, stored_data_json):
+    """Train LSTM and Random Forest models"""
+    if n_clicks == 0:
+        if ml_predictor.is_trained:
+            return html.Div([
+                html.P('✅ ML Models Trained & Ready', style={
+                    'color': '#28a745', 'fontWeight': 'bold', 'padding': '10px',
+                    'background': '#d4edda', 'borderRadius': '8px', 'textAlign': 'center'
+                })
+            ])
+        else:
+            return html.Div([
+                html.P('⚠️ Models Not Trained Yet', style={
+                    'color': '#856404', 'fontWeight': 'bold', 'padding': '10px',
+                    'background': '#fff3cd', 'borderRadius': '8px', 'textAlign': 'center'
+                }),
+                html.P('Click "TRAIN ML MODELS" to start training', style={
+                    'color': '#666', 'fontSize': '12px', 'textAlign': 'center', 'marginTop': '5px'
+                })
+            ])
+    
+    try:
+        data_current = json.loads(stored_data_json)
+        df = pd.DataFrame(data_current['historical_data'])
+        # Robust datetime parsing to handle ISO strings like "2026-01-13T15:44:44.721243"
+        df['Date'] = pd.to_datetime(df['Date'], format='mixed')
+        
+        # Train models
+        metrics = ml_predictor.train_models(df)
+        
+        if metrics:
+            return html.Div([
+                html.P('✅ Training Complete!', style={
+                    'color': '#28a745', 'fontWeight': 'bold', 'padding': '10px',
+                    'background': '#d4edda', 'borderRadius': '8px', 'textAlign': 'center'
+                }),
+                html.Div([
+                    html.P('LSTM - Test R²: {:.3f}, MAE: {:.1f}'.format(
+                        metrics['lstm']['test_r2'], metrics['lstm']['test_mae']),
+                        style={'fontSize': '12px', 'margin': '5px 0'}),
+                    html.P('Random Forest - Test R²: {:.3f}, MAE: {:.1f}'.format(
+                        metrics['random_forest']['test_r2'], metrics['random_forest']['test_mae']),
+                        style={'fontSize': '12px', 'margin': '5px 0'})
+                ], style={'marginTop': '10px', 'padding': '10px', 'background': '#f8f9fa', 'borderRadius': '5px'})
+            ])
+        else:
+            return html.Div([
+                html.P('⚠️ Training Failed - Insufficient Data', style={
+                    'color': '#dc3545', 'fontWeight': 'bold', 'padding': '10px',
+                    'background': '#f8d7da', 'borderRadius': '8px', 'textAlign': 'center'
+                })
+            ])
+    except Exception as e:
+        return html.Div([
+            html.P(f'❌ Training Error: {str(e)}', style={
+                'color': '#dc3545', 'fontWeight': 'bold', 'padding': '10px',
+                'background': '#f8d7da', 'borderRadius': '8px', 'textAlign': 'center'
+            })
+        ])
+
+@callback(
     [Output('rolling-trend-chart', 'figure'), Output('triple-analysis-chart', 'figure'),
      Output('carbon-chart', 'figure'), Output('model-metrics', 'children'),
      Output('prediction-metrics', 'children'), Output('prediction-history', 'children'),
-     Output('data-storage', 'data')],
+     Output('data-storage', 'data'), Output('ml-models-trained', 'data')],
     [Input('predict-btn', 'n_clicks'), Input('btn-veg', 'n_clicks'), 
-     Input('btn-nonveg', 'n_clicks'), Input('btn-special', 'n_clicks')],
+     Input('btn-nonveg', 'n_clicks'), Input('btn-special', 'n_clicks'), Input('train-btn', 'n_clicks')],
     [State('attendance-input', 'value'), State('date-range', 'start_date'),
      State('date-range', 'end_date'), State('data-storage', 'data'),
-     State('selected-menu-type', 'data')]
+     State('selected-menu-type', 'data'), State('ml-models-trained', 'data')]
 )
-def predict_food_waste(n_clicks, veg_clicks, nonveg_clicks, special_clicks, 
-                       attendance, start_date, end_date, stored_data_json, selected_menu_type):
+def predict_food_waste(n_clicks, veg_clicks, nonveg_clicks, special_clicks, train_clicks,
+                       attendance, start_date, end_date, stored_data_json, selected_menu_type, models_trained):
     # 4. INPUT → OUTPUT MAPPING
     data_current = json.loads(stored_data_json)
     df = pd.DataFrame(data_current['historical_data'])
-    df['Date'] = pd.to_datetime(df['Date'])
+    # Robust datetime parsing to handle different ISO8601 formats
+    df['Date'] = pd.to_datetime(df['Date'], format='mixed')
     
     # Normalize click counts for display
     veg_clicks = veg_clicks or 0
@@ -237,12 +320,13 @@ def predict_food_waste(n_clicks, veg_clicks, nonveg_clicks, special_clicks,
     menu_button_clicked = ctx.triggered_id and ctx.triggered_id in ['btn-veg', 'btn-nonveg', 'btn-special']
     
     # Handle initial state (no buttons clicked yet)
-    if n_clicks == 0 and not menu_button_clicked:
+    if n_clicks == 0 and not menu_button_clicked and train_clicks == 0:
         metrics = calculate_model_metrics(df)
         return (create_rolling_trend_chart(df), create_triple_analysis_chart(df),
                 px.bar(df.groupby('MenuType')['FoodWaste'].sum(), title="Carbon Footprint"),
                 html.Div([f"MAE: {metrics['mae']}", f"RMSE: {metrics['rmse']}", f"R²: {metrics['r2']}"]),
-                html.Div(), html.Div("Ready for predictions! Select a menu type and click predict."), json.dumps(data_store))
+                html.Div(), html.Div("Ready for predictions! Select a menu type and click predict."), 
+                json.dumps(data_store), ml_predictor.is_trained)
     
     # Get attendance value or use default
     if attendance:
@@ -252,10 +336,27 @@ def predict_food_waste(n_clicks, veg_clicks, nonveg_clicks, special_clicks,
     
     menu_type = selected_menu_type if selected_menu_type else 'Veg'
     
-    # 5. RULE-BASED FORECASTING EXECUTION
-    predicted_waste_veg = rule_based_forecast(df, attendance, 'Veg')
-    predicted_waste_nonveg = rule_based_forecast(df, attendance, 'Non-Veg')
-    predicted_waste = rule_based_forecast(df, attendance, menu_type)
+    # Use ML models if trained, otherwise fall back to rule-based
+    if models_trained and ml_predictor.is_trained:
+        # ML-based prediction
+        predicted_waste = ml_predictor.predict_ensemble(df, attendance, menu_type)
+        if predicted_waste is None:
+            # Fallback to rule-based if ML prediction fails
+            predicted_waste = rule_based_forecast(df, attendance, menu_type)
+        
+        # Also get individual model predictions for display
+        lstm_pred = ml_predictor.predict_lstm(df, attendance, menu_type)
+        rf_pred = ml_predictor.predict_random_forest(df, attendance, menu_type)
+        
+        predicted_waste_veg = ml_predictor.predict_ensemble(df, attendance, 'Veg') or rule_based_forecast(df, attendance, 'Veg')
+        predicted_waste_nonveg = ml_predictor.predict_ensemble(df, attendance, 'Non-Veg') or rule_based_forecast(df, attendance, 'Non-Veg')
+    else:
+        # Rule-based forecasting (fallback)
+        predicted_waste_veg = rule_based_forecast(df, attendance, 'Veg')
+        predicted_waste_nonveg = rule_based_forecast(df, attendance, 'Non-Veg')
+        predicted_waste = rule_based_forecast(df, attendance, menu_type)
+        lstm_pred = None
+        rf_pred = None
     
     # Calculate carbon emission based on menu type
     # Veg: less than 150 (green), Non-Veg/Special: greater than 150 (red)
@@ -282,11 +383,33 @@ def predict_food_waste(n_clicks, veg_clicks, nonveg_clicks, special_clicks,
     
     # 8. PERFORMANCE METRICS
     metrics = calculate_model_metrics(df)
-    model_display = html.Div([
-        html.Div(f"MAE: {metrics['mae']}", style={'background': '#2196F3', 'color': 'white', 'padding': '15px'}),
-        html.Div(f"RMSE: {metrics['rmse']}", style={'background': '#FF9800', 'color': 'white', 'padding': '15px'}),
-        html.Div(f"R²: {metrics['r2']}", style={'background': '#4CAF50', 'color': 'white', 'padding': '15px'})
-    ], style={'display': 'flex', 'gap': '15px'})
+    
+    # Show ML model info if trained
+    if models_trained and ml_predictor.is_trained:
+        model_display = html.Div([
+            html.Div([
+                html.P('🤖 ML Models Active', style={'fontWeight': 'bold', 'marginBottom': '10px'}),
+                html.Div([
+                    html.Div(f"LSTM: {lstm_pred:.0f}" if lstm_pred else "LSTM: N/A", 
+                            style={'background': '#9C27B0', 'color': 'white', 'padding': '10px', 'borderRadius': '5px'}),
+                    html.Div(f"RF: {rf_pred:.0f}" if rf_pred else "RF: N/A", 
+                            style={'background': '#E91E63', 'color': 'white', 'padding': '10px', 'borderRadius': '5px'}),
+                    html.Div(f"Ensemble: {predicted_waste:.0f}", 
+                            style={'background': '#1f77b4', 'color': 'white', 'padding': '10px', 'borderRadius': '5px'})
+                ], style={'display': 'flex', 'gap': '10px', 'marginBottom': '10px'}),
+                html.Div([
+                    html.Div(f"MAE: {metrics['mae']}", style={'background': '#2196F3', 'color': 'white', 'padding': '10px', 'borderRadius': '5px'}),
+                    html.Div(f"RMSE: {metrics['rmse']}", style={'background': '#FF9800', 'color': 'white', 'padding': '10px', 'borderRadius': '5px'}),
+                    html.Div(f"R²: {metrics['r2']}", style={'background': '#4CAF50', 'color': 'white', 'padding': '10px', 'borderRadius': '5px'})
+                ], style={'display': 'flex', 'gap': '10px'})
+            ])
+        ], style={'padding': '15px', 'background': '#f8f9fa', 'borderRadius': '10px'})
+    else:
+        model_display = html.Div([
+            html.Div(f"MAE: {metrics['mae']}", style={'background': '#2196F3', 'color': 'white', 'padding': '15px'}),
+            html.Div(f"RMSE: {metrics['rmse']}", style={'background': '#FF9800', 'color': 'white', 'padding': '15px'}),
+            html.Div(f"R²: {metrics['r2']}", style={'background': '#4CAF50', 'color': 'white', 'padding': '15px'})
+        ], style={'display': 'flex', 'gap': '15px'})
     
     # 6. REAL-TIME RESULTS
     results = html.Div([
@@ -350,7 +473,7 @@ def predict_food_waste(n_clicks, veg_clicks, nonveg_clicks, special_clicks,
     
     return (create_rolling_trend_chart(df), create_triple_analysis_chart(df),
             px.bar(df.groupby('MenuType')['FoodWaste'].sum(), title="Carbon Footprint"),
-            model_display, results, history, json.dumps(data_store))
+            model_display, results, history, json.dumps(data_store), ml_predictor.is_trained)
 
 if __name__ == '__main__':
     print("🚀 RULE-BASED FORECASTING DASHBOARD - 100% SPEC MATCH!")
