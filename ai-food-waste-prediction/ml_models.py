@@ -1,9 +1,3 @@
-"""
-Machine Learning Models for Food Waste Prediction
-- LSTM (Long Short-Term Memory) for time series prediction
-- Random Forest for tabular data prediction
-"""
-
 import numpy as np
 import pandas as pd
 from sklearn.ensemble import RandomForestRegressor
