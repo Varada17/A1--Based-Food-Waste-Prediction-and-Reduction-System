@@ -156,7 +156,7 @@ def create_triple_analysis_chart(df):
     week_avg = week_data['FoodWaste'].mean()
     fig.add_trace(go.Scatter(x=['Week Avg'], y=[week_avg],
                            mode='markers+text', marker=dict(size=25, color='#ff7f0e'),
-                           text=[f'{week_avg:.0f}'], name='Today'))
+                           text=[f'{week_avg:.0f}'], name='Weekly'))
     
     fig.update_layout(height=450, title="🎯 Triple Analysis View",
                      xaxis_title="Date", yaxis_title="Food Waste (plates)")
@@ -220,13 +220,15 @@ app.layout = html.Div([
                      html.Div(id='menu-buttons')], style={'margin': '20px 0'}),
             
             html.Button('🤖 TRAIN ML MODELS', id='train-btn', n_clicks=0,
-                       style={'width': '100%', 'background': 'linear-gradient(45deg, #9C27B0, #E91E63)', 
-                             'color': 'white', 'border': 'none', 'padding': '15px', 'fontSize': '18px', 
-                             'fontWeight': 'bold', 'borderRadius': '15px', 'cursor': 'pointer',
-                             'boxShadow': '0 8px 25px rgba(156,39,176,0.4)', 'transition': 'all 0.3s',
-                             'marginBottom': '15px'}),
+                       style={
+                           'width': '100%', 'background': 'linear-gradient(45deg, #9C27B0, #E91E63)', 
+                           'color': 'white', 'border': 'none', 'padding': '15px', 'fontSize': '18px', 
+                           'fontWeight': 'bold', 'borderRadius': '15px',
+                           # Hide the button – logic still exists but user does not see/click it
+                           'display': 'none'
+                       }),
             
-            html.Div(id='training-status', style={'marginBottom': '15px'}),
+            html.Div(id='training-status', style={'marginBottom': '15px', 'display': 'none'}),
             
             html.Button('🚀 PREDICT & SAVE', id='predict-btn', n_clicks=0,disabled=True,
                        style={'width': '100%', 'background': 'linear-gradient(45deg, #1f77b4, #4B8BBE)', 
@@ -374,6 +376,15 @@ def predict_food_waste(n_clicks, veg_clicks, nonveg_clicks, special_clicks, trai
     veg_clicks = veg_clicks or 0
     nonveg_clicks = nonveg_clicks or 0
     special_clicks = special_clicks or 0
+
+    
+    if n_clicks > 0 and ctx.triggered_id == 'predict-btn' and not (models_trained and ml_predictor.is_trained):
+        try:
+            ml_predictor.train_models(df)
+            models_trained = ml_predictor.is_trained
+        except Exception as e:
+            # If auto-training fails, continue with rule-based predictions
+            print(f"Auto-training error: {e}")
     
     
     menu_button_clicked = ctx.triggered_id and ctx.triggered_id in ['btn-veg', 'btn-nonveg', 'btn-special']
@@ -554,7 +565,7 @@ def predict_food_waste(n_clicks, veg_clicks, nonveg_clicks, special_clicks, trai
             create_carbon_chart(df),
             model_display, results, history, final_data_json, ml_predictor.is_trained)
 
-if __name__ == '__main__':
+if __name__ == '__main__': 
     print("🚀 RULE-BASED FORECASTING DASHBOARD - 100% SPEC MATCH!")
     print("🌐 http://localhost:8050 | http://0.0.0.0:8050")
     app.run(debug=True, host='0.0.0.0', port=8050)
